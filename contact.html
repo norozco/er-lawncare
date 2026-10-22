@@ -11,21 +11,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Poppins:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="css/site.css?v=mvjt3x3a">
+  <link rel="stylesheet" href="css/site.css?v=mvjtlv9f">
 </head>
 <body>
   <a class="sr-only" href="#main"><span lang="en">Skip to content</span><span lang="es">Ir al contenido</span></a>
   <header class="site-header">
     <div class="wrap">
       <div class="bar">
-        <a class="brand" href="index.html" aria-label="ER Lawncare home">
+        <a class="brand" href="index.html" aria-label="ER Lawncare home" data-aria-en="ER Lawncare home" data-aria-es="Inicio de ER Lawncare">
           <picture>
             <source srcset="images/logo-mark-dark.png" media="(prefers-color-scheme: dark)">
             <img src="images/logo-mark.png" alt="" width="360" height="298">
           </picture>
           <span><b>ER Lawncare</b><small><span lang="en">Residential and Commercial</span><span lang="es">Residencial y comercial</span></small></span>
         </a>
-        <nav class="nav" aria-label="Main">
+        <nav class="nav" aria-label="Main" data-aria-en="Main" data-aria-es="Principal">
           <a href="index.html"><span lang="en">Home</span><span lang="es">Inicio</span></a>
           <a href="services.html"><span lang="en">Services</span><span lang="es">Servicios</span></a>
           <a href="work.html"><span lang="en">Our work</span><span lang="es">Trabajos</span></a>
@@ -34,8 +34,8 @@
         </nav>
         <button class="lang" type="button">ES</button>
         <a class="btn btn-primary" href="sms:+17797740702"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span lang="en">Text us</span><span lang="es">Mande texto</span></a>
-        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-        <nav class="menu-panel" id="menu-panel" aria-label="Menu">
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel" aria-label="Menu" data-aria-en="Menu" data-aria-es="Menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <nav class="menu-panel" id="menu-panel" aria-label="Menu" data-aria-en="Menu" data-aria-es="Menú">
           <a href="index.html"><span lang="en">Home</span><span lang="es">Inicio</span></a>
           <a href="services.html"><span lang="en">Services</span><span lang="es">Servicios</span></a>
           <a href="work.html"><span lang="en">Our work</span><span lang="es">Trabajos</span></a>
@@ -67,6 +67,8 @@
         </div>
         <form class="quote" id="quote-form" novalidate>
           <h2 lang="en" style="font-size:clamp(1.8rem,3vw,2.4rem)">Send your <em>request</em></h2><h2 lang="es" style="font-size:clamp(1.8rem,3vw,2.4rem)">Mande su <em>solicitud</em></h2>
+          <div class="handoff only-touch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><p lang="en"><b>How this works:</b> fill this in and tap Send. Your texting app opens with the message ready, so you can add photos and send it to 779-774-0702.</p><p lang="es"><b>Cómo funciona:</b> llene esto y toque Enviar. Su app de mensajes se abre con el mensaje listo para que agregue fotos y lo mande al 779-774-0702.</p></div>
+          <div class="handoff only-desktop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><p lang="en"><b>On a computer?</b> Fill this in and tap Copy. Then paste it into a text to 779-774-0702 from your phone, or just call us.</p><p lang="es"><b>¿En una computadora?</b> Llene esto y toque Copiar. Luego péguelo en un texto al 779-774-0702 desde su teléfono, o llámenos.</p></div>
           <div class="row2">
             <div class="field"><label for="name"><span lang="en">Name</span><span lang="es">Nombre</span></label><input id="name" name="name" autocomplete="name" required></div>
             <div class="field"><label for="phone"><span lang="en">Phone</span><span lang="es">Teléfono</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
@@ -75,19 +77,19 @@
           <div class="field">
             <label for="service"><span lang="en">What do you need?</span><span lang="es">¿Qué necesita?</span></label>
             <select id="service" name="service" required>
-              <option value="lawn">Lawn care / Cuidado del pasto</option>
-              <option value="landscaping">Landscaping / Jardinería</option>
-              <option value="hardscapes">Hardscapes and fencing / Adoquines, muros y cercas</option>
-              <option value="cleanups">Clean-ups and drainage / Limpiezas y drenaje</option>
-              <option value="other">Something else / Otra cosa</option>
+              <option value="lawn" data-en="Lawn care" data-es="Cuidado del pasto">Lawn care / Cuidado del pasto</option>
+              <option value="landscaping" data-en="Landscaping" data-es="Jardinería">Landscaping / Jardinería</option>
+              <option value="hardscapes" data-en="Hardscapes and fencing" data-es="Adoquines, muros y cercas">Hardscapes and fencing / Adoquines, muros y cercas</option>
+              <option value="cleanups" data-en="Clean-ups and drainage" data-es="Limpiezas y drenaje">Clean-ups and drainage / Limpiezas y drenaje</option>
+              <option value="other" data-en="Something else" data-es="Otra cosa">Something else / Otra cosa</option>
             </select>
           </div>
           <div class="field">
             <label for="details"><span lang="en">Tell us about the job</span><span lang="es">Cuéntenos del trabajo</span></label>
             <textarea id="details" name="details" data-ph-en="Example: weekly mowing for a corner lot, front and back" data-ph-es="Ejemplo: corte semanal para un lote de esquina, enfrente y atrás"></textarea>
           </div>
-          <button class="btn btn-primary" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span lang="en">Send by text</span><span lang="es">Enviar por texto</span></button>
-          <p lang="en" class="form-note">This opens your texting app with your request filled in, so you can add photos before sending.</p><p lang="es" class="form-note">Esto abre su app de mensajes con su solicitud lista, para que pueda agregar fotos antes de enviarla.</p>
+          <button class="btn btn-primary" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="only-touch"><span lang="en">Send by text</span><span lang="es">Enviar por texto</span></span><span class="only-desktop"><span lang="en">Copy my request</span><span lang="es">Copiar mi solicitud</span></span></button>
+          <textarea class="copy-box" id="copy-box" readonly aria-label="Your request" data-aria-en="Your request" data-aria-es="Su solicitud"></textarea>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -142,7 +144,7 @@
     <a class="btn btn-line" href="tel:+17797740702"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>779-774-0702</a>
   </div>
 
-  <script src="js/site.js?v=mvjt3x3a"></script>
-  <script src="js/lawn.js?v=mvjt3x3a"></script>
+  <script src="js/site.js?v=mvjtlv9f"></script>
+  <script src="js/lawn.js?v=mvjtlv9f"></script>
 </body>
 </html>

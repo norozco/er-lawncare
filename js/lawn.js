@@ -134,7 +134,8 @@
         pts.push([W + 130 * S, top + (rows - 1) * swath, rows - 1]);
       } else {
         // Full-width stripes, turning just outside the edges so the turns are not seen
-        swath = Math.max(56 * dpr, Math.min(96 * S, H / 4));
+        // data-swath sets the stripe width in CSS pixels (short banners use narrower stripes)
+        swath = host.dataset.swath ? Number(host.dataset.swath) * dpr : Math.max(56 * dpr, Math.min(96 * S, H / 4));
         speed = Math.max(520 * dpr, W * 0.55);
         const rows = Math.ceil(H / swath) + 1, x0 = -90 * S, x1 = W + 90 * S;
         pts = [[x0 - 40 * S, swath / 2, 0]];
@@ -155,6 +156,14 @@
       }
       total = path[path.length - 1].s;
       reset();
+      // Home logo: start with about a third already mowed, so the lawn is never empty when the page opens
+      if (mode === 'logo' && !still) {
+        const start = total * 0.35;
+        let prev = at(0);
+        for (let s = 0; s <= start; s += 6) { const p = at(s); stamp(prev, p); prev = p; }
+        d = start; phase = 'mow';
+        render(at(d));
+      }
       self.ready = true;
       return true;
     }
