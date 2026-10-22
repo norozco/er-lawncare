@@ -339,6 +339,9 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); ou
 @media (max-width: 640px) {
   body { padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
   .brand small, .bar .btn-primary { display: none; }
+  /* Home headline fills the phone width; the small line above it is easier to read */
+  .hero h1 { font-size: clamp(2.6rem, 14.6vw, 4.4rem); line-height: 0.98; text-wrap: wrap; }
+  .eyebrow { font-size: 0.88rem; letter-spacing: 0.07em; flex-wrap: wrap; row-gap: 4px; }
   .svc-grid, .values, .row2, .foot { grid-template-columns: minmax(0, 1fr); }
   .svc-row .checks { grid-template-columns: minmax(0, 1fr); }
   .gallery { grid-template-columns: minmax(0, 1fr); }
