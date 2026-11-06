@@ -50,7 +50,8 @@
 
   if (!hosts.length) return;
   const logo = new Image();
-  if (hosts.some(h => h.dataset.lawn === 'logo')) logo.src = 'images/logo-full.png';
+  const logoHost = hosts.find(h => h.dataset.lawn === 'logo');
+  if (logoHost) logo.src = logoHost.dataset.logo || 'images/logo-full.png';
   const LOGO_ASPECT = 800 / 714;
 
   function drawMower(ctx, p, s) {
