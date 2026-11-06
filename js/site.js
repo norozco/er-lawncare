@@ -19,6 +19,7 @@ const PHONE_SHOW = '779-774-0702';
     });
     document.querySelectorAll('[data-ph-en]').forEach(el => el.setAttribute('placeholder', el.dataset[l === 'es' ? 'phEs' : 'phEn']));
     // Screen reader labels in the chosen language
+    document.querySelectorAll('[data-alt-en]').forEach(el => { el.alt = el.dataset[l === 'es' ? 'altEs' : 'altEn']; });
     document.querySelectorAll('[data-aria-en]').forEach(el => el.setAttribute('aria-label', el.dataset[l === 'es' ? 'ariaEs' : 'ariaEn']));
   }
   let saved = null;
@@ -71,6 +72,7 @@ const PHONE_SHOW = '779-774-0702';
       ? [`Hola, soy ${f.name}. Quisiera una cotización.`, `Servicio: ${service}`, `Dirección: ${f.address}`, f.details ? `Detalles: ${f.details}` : '', `Mi teléfono: ${f.phone}`]
       : [`Hi, this is ${f.name}. I'd like a quote.`, `Service: ${service}`, `Address: ${f.address}`, f.details ? `Details: ${f.details}` : '', `My phone: ${f.phone}`];
     const body = lines.filter(Boolean).join('\n');
+    if (window.BizBot) BizBot.track('lead', { detail: 'quote form: ' + (opt.dataset.en || service) });
     if (canText) {
       // "?&body=" works on both iPhone and Android
       window.location.href = `sms:${PHONE}?&body=${encodeURIComponent(body)}`;

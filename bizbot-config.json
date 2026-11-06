@@ -1,0 +1,68 @@
+{
+  "id": "er-lawncare",
+  "brand": {
+    "name": "ER Lawncare",
+    "tagline": "Residential and commercial lawn care and landscaping",
+    "accentColor": "#8a1a2b",
+    "assistantName": "ER Lawncare Assistant",
+    "avatar": "🌿",
+    "greeting": "Hi! I'm the ER Lawncare assistant. I can help you get a free quote, tell you about our services, or answer a question. Se habla español.",
+    "teaser": "Free quote? Tap to chat",
+    "theme": "light"
+  },
+  "contact": {
+    "phone": "779-774-0702",
+    "email": "cordobaver68@yahoo.com",
+    "address": "Based in Rockford, IL"
+  },
+  "hours": {
+    "Towns": "Rockford, Loves Park, Machesney Park, Roscoe, Rockton, Belvidere, Cherry Valley, South Beloit",
+    "Quotes": "Text 779-774-0702 anytime (fastest), or call",
+    "Languages": "English and Español"
+  },
+  "labels": {
+    "hoursButton": "📍 Service area and contact",
+    "hoursIntro": "Here's where we work and how to reach us:",
+    "servicesIntro": "Here's what we do. Tap one to learn more:"
+  },
+  "booking": false,
+  "quote": {
+    "label": "📝 Get a free quote",
+    "text": "Texting is the fastest way: send a few photos of the yard and what you need, and we'll get back to you with a price. How would you like to reach us?",
+    "actions": [
+      { "label": "💬 Text 779-774-0702", "href": "sms:+17797740702" },
+      { "label": "📞 Call 779-774-0702", "href": "tel:+17797740702" },
+      { "label": "📝 Fill out the quote form", "href": "contact.html" }
+    ]
+  },
+  "services": [
+    { "id": "lawn", "name": "Lawn care", "durationMinutes": 0, "description": "Regular mowing and trimming, bush trimming, grass seeding, sod installation and top soil to bring a tired lawn back." },
+    { "id": "landscaping", "name": "Landscaping", "durationMinutes": 0, "description": "Clean beds and borders: fresh mulch, decorative stone, landscape edging blocks, and bed clean-up and shaping." },
+    { "id": "hardscapes", "name": "Hardscapes and fencing", "durationMinutes": 0, "description": "Paver patios and walkways, retaining walls and fences, built on a solid base." },
+    { "id": "cleanups", "name": "Clean-ups and drainage", "durationMinutes": 0, "description": "Spring and fall clean-ups, yard waste removal, gutter cleaning, and underground downspouts that move water away from the house." }
+  ],
+  "faq": [
+    { "topic": "Quotes and prices", "q": "How do I get a quote or estimate price cost how much do you charge?", "a": "Text 779-774-0702 with a few photos and what you need (that's fastest), call us, or fill out the quote form on the Contact page. Quotes are free." },
+    { "topic": "Service area", "q": "What areas towns cities do you serve work in?", "a": "We work in Rockford, Loves Park, Machesney Park, Roscoe, Rockton, Belvidere, Cherry Valley and South Beloit. Somewhere else? Text 779-774-0702 and ask." },
+    { "topic": "Mowing", "q": "Do you do lawn mowing cutting grass weekly?", "a": "Yes. We do regular mowing and trimming, plus seeding, sod and top soil. Text 779-774-0702 for a free quote." },
+    { "topic": "Retaining walls and pavers", "q": "Do you build retaining walls pavers patios walkways?", "a": "Yes. We build paver patios and walkways and retaining walls, and we replace old walls. Text photos to 779-774-0702 for a free quote." },
+    { "topic": "Fences", "q": "Do you install fences fencing?", "a": "Yes, we install fences. Text 779-774-0702 with the length of fence you need and a photo of the area." },
+    { "topic": "Mulch, stone and edging", "q": "Do you do mulch decorative stone rock edging?", "a": "Yes. Fresh mulch, decorative stone and landscape edging blocks, plus bed clean-up and shaping." },
+    { "topic": "Gutters and downspouts", "q": "Do you clean gutters or install underground downspouts drainage?", "a": "Yes. We clean gutters and install underground downspouts that carry water away from your house." },
+    { "topic": "Clean-ups", "q": "Do you do spring fall clean up leaves yard waste removal?", "a": "Yes. Spring and fall clean-ups, and we haul the yard waste away." },
+    { "topic": "Commercial", "q": "Do you do commercial properties businesses?", "a": "Yes, we work on both homes and commercial properties. Text or call 779-774-0702 to talk about your property." },
+    { "topic": "Spanish", "q": "Hablan espanol? Do you speak Spanish?", "a": "Sí, hablamos español. Mande texto o llame al 779-774-0702." }
+  ],
+  "fallbackAnswer": "Good question. We can answer that one best by text. Send it to {phone}, or tap \"Get a free quote\" in the menu.",
+  "log": { "url": "https://script.google.com/macros/s/AKfycbxdbBx1TEspyyzYLpWrU4Yf_ulNa4_B2vLaEQ_G_B4yuPAW0GZcgkplr7ICj9WyBrHD/exec" },
+  "recommendations": [],
+  "scheduling": {
+    "slotMinutes": 60,
+    "openWeekdays": [1, 2, 3, 4, 5],
+    "dayStartHour": 8,
+    "dayEndHour": 17,
+    "bookingHorizonDays": 14,
+    "timezoneLabel": "local time"
+  },
+  "aiAvailable": true
+}
