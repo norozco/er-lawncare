@@ -321,6 +321,7 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); ou
 .handoff svg { width: 20px; height: 20px; flex: 0 0 auto; margin-top: 2px; color: var(--accent); }
 .handoff b { color: var(--ink); font-weight: 500; }
 html:not(.touch) .only-touch, html.touch .only-desktop { display: none !important; }
+.quote .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .copy-box { display: none; font: 0.9rem/1.5 var(--sans); min-height: 120px; }
 .copy-box.show { display: block; }
 .form-status { font-weight: 500; color: var(--accent); min-height: 1.6em; }
